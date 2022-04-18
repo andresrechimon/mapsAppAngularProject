@@ -15,12 +15,31 @@ import * as mapboxgl from 'mapbox-gl';
       background-color: white;
       border-radius: 5px;
       bottom: 50px;
-      left: 50px;
       padding: 10px;
       position: fixed;
       z-index: 999;
       width: 400px;
     }
+
+    @media (max-width: 413px) {
+    .bigScreen {
+      display:none;
+    }
+    .smallScreen {
+      display:block;
+      left:18px;
+    }
+  }
+  
+  @media (min-width: 414px) {
+    .bigScreen {
+      display:block;
+      left:50px;
+    }
+    .smallScreen {
+      display:none;
+    }
+  }
     `
   ]
 })
